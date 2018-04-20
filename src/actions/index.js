@@ -9,13 +9,15 @@ export const login=()=>{
                 payload:{"token":"abc123","userType":"A"}
             })
         localStorage.setItem('token',"abc123");
+        localStorage.setItem('userType',"S");
     })
 
 }
-localStorage.setItem('userType',"S");
+
 export const logoutAction=()=>{
     return((dispatch)=>{
           dispatch({
+
               type:"LOG_OUT"
           })
         localStorage.clear()

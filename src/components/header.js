@@ -14,15 +14,15 @@ class Header extends Component{
                         <h4>DEMO</h4>
                     <div align={'right'} className={'col-md-8'}>
                     </div>
-                        <NavLink to={'/home'}>HOME</NavLink>&nbsp;&nbsp;&nbsp;
+                        <NavLink to={'/home'}>HOME</NavLink>&nbsp;
                         {localStorage.getItem('token') ?
                             <NavLink to={''} onClick={(e)=>{e.preventDefault();
                                 this.props.logoutAction()
                                 this.props.goToHome()
                             }}>LOGOUT </NavLink> :
                             <NavLink to={'/login'}>LOGIN</NavLink> }
-                        <NavLink to={'/about'}>ABOUT US</NavLink>&nbsp;&nbsp;&nbsp;
-                        <NavLink to={'/contact'}>CONTACT</NavLink>&nbsp;&nbsp;&nbsp;
+                        <NavLink to={'/about'}>ABOUT US</NavLink>&nbsp;
+                        <NavLink to={'/contact'}>CONTACT</NavLink>&nbsp;
                     </div>
                 </nav>
             </div>

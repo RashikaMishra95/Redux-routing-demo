@@ -29,9 +29,9 @@ class AdminHome extends Component{
                  <NavLink to={'/adminHome/p3'}>Page 3</NavLink>&nbsp;&nbsp;&nbsp;
              </div>
              <div>
-                     <PrivateRoute exact path={'/adminHome/p1'} component={p1}/>
-                     <PrivateRoute exact path={'/adminHome/p2'} component={p2}/>
-                     <PrivateRoute exact path={'/adminHome/p3'} component={p3}/>
+                     <Route exact path={'/adminHome/p1'} component={p1}/>
+                     <Route exact path={'/adminHome/p2'} component={p2}/>
+                     <Route exact path={'/adminHome/p3'} component={p3}/>
              </div>
          </div>
         )
